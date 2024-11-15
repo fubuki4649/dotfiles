@@ -23,10 +23,8 @@ shopt -s nocaseglob
 # Random Aliases
 alias neko="cat"
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias :q="exit"
-
-# Discord browserification trial
-alias discord="chromium --app=https://discord.com/app & disown"
+alias getamper="curl -fsSL -o amper "https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.4.0/cli-0.4.0-wrapper?download=true" && chmod +x amper"
+alias amper="./amper"
 
 # Random Exports
 export EDITOR=vi
