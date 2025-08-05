@@ -23,13 +23,14 @@ shopt -s nocaseglob
 # Random Aliases
 alias neko="cat"
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias getamper="curl -fsSL -o amper "https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.4.0/cli-0.4.0-wrapper?download=true" && chmod +x amper"
+alias getamper="curl -fsSL -o amper "https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.7.0/cli-0.7.0-wrapper?download=true" && chmod +x amper"
 alias amper="./amper"
 
 # Random Exports
 export EDITOR=vi
 export TERMINAL=kitty
 export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
 PATH=/home/kaneki/.surrealdb:$PATH
 
@@ -67,4 +68,7 @@ fi
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
+
+
 . "$HOME/.cargo/env"
+
