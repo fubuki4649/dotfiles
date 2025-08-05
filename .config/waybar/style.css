@@ -8,10 +8,9 @@
 }
 
 window#waybar {
-    background: #F9F9F9;
-    opacity: 0.6;
-    color: #222222;
-    border-bottom: 2px solid #A7A9AC;
+    background: rgba(249, 249, 249, 0.6); /* Formerly #F9F9F9 */
+    color: rgba(34, 34, 34, 0.8); /* Formerly #222222 */
+    border-bottom: 2px solid #7A7A7A;
 }
 
 tooltip {
@@ -31,12 +30,11 @@ tooltip label {
 #workspaces button {
     padding: 0 1em;
     background: transparent;
-    color: #A7A9AC;
+    color: rgba(34, 34, 34, 0.4); /* Formerly #222222 */
 }
 
 #workspaces button:hover {
-    background: #F9F9F9;
-    opacity: 0.6;
+    background: rgba(249, 249, 249, 0.6); /* Formerly #F9F9F9 */
     color: #005288;
 }
 
